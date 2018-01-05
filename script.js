@@ -16,7 +16,7 @@ function selectCSS(){
 	fileref.setAttribute("rel", "stylesheet");
 	fileref.setAttribute("type", "text/css");
 
-	if (WURFL.is_mobile === true) ) { //&& WURFL.form_factor === "Smartphone"
+	if (WURFL.is_mobile === true) { //WURFL.is_mobile === true && WURFL.form_factor === "Smartphone"
 		fileref.setAttribute("href", "mobile_style.css");
 		diceX = document.getElementById("diceX");
 		
@@ -32,9 +32,7 @@ function selectCSS(){
 
 }
 
-window.ondevicemotion = onShake(event);
-
-function onShake(event){
+window.ondevicemotion = function(event){
 	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
 		activeDice = document.getElementById("slider").value;
 		chooseFreeDice();
