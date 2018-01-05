@@ -1,0 +1,37 @@
+
+#start{
+	background-color:#243010;
+	width:50%;
+	height: 10vh;
+	font-size:xx-large;
+	margin: 0 25%;
+	border-color:#243010;
+	color:white;
+}
+
+#slider{
+	outline:none;
+}
+
+.dice{
+	margin:30vh auto;
+	border-radius:10px;
+	background-color:red;
+	color:white;
+	width: 20vh;
+	height:20vh;
+	text-align:center;
+	border:none;
+	font-size:xx-large;
+	opacity:0.7;
+}
+
+.table{
+	float:left;
+	width:25%;
+	text-align:center;
+}
+
+body{
+	background-image: url("plain_table.jpeg");
+}

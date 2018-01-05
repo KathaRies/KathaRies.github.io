@@ -1,0 +1,37 @@
+<!doctype html>
+
+<head>
+	<title>Throw a dice</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Katharina Riesterer">
+	<meta name="description" content="Here you can throw a dice">
+	<script type="text/javascript" src="//wurfl.io/wurfl.js"></script> <!--for user agent sniffing-->
+	<script src="script.js"></script>
+	<!-- Stylesheet is dynamically loaded by JS function selectCSS() on page load.-->
+</head>
+
+<body onload="selectCSS();">
+
+<button id="start" onClick="onClickStart('start');">Start</button>
+
+<div class="table">
+	<button id="dice4" class="dice" onClick="onClickStart('4');">4</button>
+</div>
+
+<div class="table">
+	<button id="dice6" class="dice" onClick="onClickStart('6');">6</button>
+</div>
+
+<div class="table">
+	<button id="dice8" class="dice" onClick="onClickStart('8');">8</button>
+</div>
+
+<div class="table">
+	<input type="range" min="1" max="100" value="50" id="slider" oninput="onSliderUpdate()">
+	<button id="diceX" class="dice" onClick="onClickStart('X');">X</button>
+</div>
+
+
+</body>
+
+</html>
