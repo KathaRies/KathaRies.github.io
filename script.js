@@ -16,10 +16,10 @@ function selectCSS(){
 	fileref.setAttribute("rel", "stylesheet");
 	fileref.setAttribute("type", "text/css");
 
-	if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+	if (WURFL.is_mobile === true) ) { //&& WURFL.form_factor === "Smartphone"
 		fileref.setAttribute("href", "mobile_style.css");
 		diceX = document.getElementById("diceX");
-		window.ondevicemotion = onShake(event);
+		
 	} else {
 		fileref.setAttribute("href", "style.css");
 		dice4 = document.getElementById("dice4");
@@ -29,14 +29,10 @@ function selectCSS(){
 	}
 	
 	document.getElementsByTagName("head")[0].appendChild(fileref);
-	
-	dice4 = document.getElementById("dice4");
-	dice6 = document.getElementById("dice6");
-	dice8 = document.getElementById("dice8");
-	diceX = document.getElementById("diceX");
 
-	
 }
+
+window.ondevicemotion = onShake(event);
 
 function onShake(event){
 	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
