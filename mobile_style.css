@@ -1,4 +1,25 @@
+
 #start{
 	display:none;
 }
+#slider{
+	outline:none;
+}
+#dice4{display:none;}
+#dice6{display:none;}
+#dice8{display:none;}
 
+.dice{
+	margin:50vh auto;
+	border-radius:10px;
+	background-color:red;
+	color:white;
+	width: 20vh;
+	height:20vh;
+	text-align:center;
+	border:none;
+}
+
+body{
+	background-image: url("plain_table.jpeg");
+}

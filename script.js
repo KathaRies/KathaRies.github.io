@@ -15,7 +15,6 @@ function selectCSS(){
 	var fileref = document.createElement("link");
 	fileref.setAttribute("rel", "stylesheet");
 	fileref.setAttribute("type", "text/css");
-	fileref.setAttribute("href", "style.css");
 
 	if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
 		fileref.setAttribute("href", "mobile_style.css");
