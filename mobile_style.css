@@ -26,6 +26,7 @@ body{
 	height: 20vh;
 	margin: 0vh 0vw;
 	outline:none;
+	-webkit-appearance: none;
 }
 #slider::-moz-range-thumb {
 	width: 25px;
