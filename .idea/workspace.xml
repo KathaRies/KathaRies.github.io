@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/mobile_style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -143,12 +143,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517769663616</updated>
       <workItem from="1517769665101" duration="3042000" />
-      <workItem from="1518858634557" duration="3699000" />
+      <workItem from="1518858634557" duration="3746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6741000" />
+    <option name="totallyTimeSpent" value="6788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -242,7 +242,7 @@
     <entry file="file://$PROJECT_DIR$/mobile_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
       </provider>
