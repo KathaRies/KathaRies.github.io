@@ -5,9 +5,11 @@
 	height: 10vh;
 	font-size:xx-large;
 	margin: 0 25%;
-	border-color:#243010;
+	border:none;
 	color:white;
+
 }
+
 
 #slider{
 	outline:none;
@@ -33,5 +35,5 @@
 }
 
 body{
-	background-image: url("plain_table.jpeg");
+	background-color: #b4cce1;
 }
