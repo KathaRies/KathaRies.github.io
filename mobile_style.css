@@ -1,5 +1,5 @@
 .dice{
-	margin:10vh 0px;
+	margin:10vh 0vw;
 	border-radius:10px;
 	background-color:red;
 	color:white;
@@ -12,7 +12,7 @@
 .table{
 	float:left;
 	width:25%;
-	text-align:center;
+	text-align:start;
 }
 
 body{
