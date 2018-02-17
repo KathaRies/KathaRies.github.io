@@ -1,5 +1,5 @@
 .dice{
-	margin:10vh 10vw;
+	margin:0vh 10vw;
 	border-radius:10px;
 	background-color:red;
 	color:white;
@@ -14,7 +14,7 @@
 	float:left;
 	width:75vw;
 	margin: 12vh 12vw;
-	height: 100vh;
+	height: 100%;
 	text-align:center;
 }
 
