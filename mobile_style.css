@@ -14,6 +14,7 @@
 	float:left;
 	width:75vw;
 	margin: 0vh 12vw;
+	padding-top: 10vh;
 	height: 100%;
 	text-align:center;
 }
@@ -26,12 +27,6 @@ body{
 	height: 20vh;
 	outline:none;
 	background: none;
-}
-.slider::-moz-range-thumb {
-	width: 25px;
-	height: 25px;
-	background: red;
-
 }
 
 
