@@ -37,24 +37,3 @@ body{
 #dice8{
 	display:none;
 	}
-
-.dice{
-	margin:10vh 50vh;
-	border-radius:10px;
-	background-color:red;
-	color:white;
-	width: 20vh;
-	height:20vh;
-	text-align:center;
-	font-size: xx-large;
-	border:none;
-}
-.table{
-	float:left;
-	width:25%;
-	text-align:center;
-}
-
-body{
-	background-image: url("plain_table.jpeg");
-}
