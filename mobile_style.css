@@ -21,7 +21,7 @@ body{
 #slider{
 	width: 75%;
 	height: 5vh;
-	padding: 10vh 12vw;
+	margin: 10vh 12vw;
 	outline:none;
 }
 
