@@ -16,13 +16,14 @@
 	}
 
 .dice{
-	margin:50vh auto;
+	margin:10vh auto;
 	border-radius:10px;
 	background-color:red;
 	color:white;
 	width: 20vh;
 	height:20vh;
 	text-align:center;
+	font-size: xx-large;
 	border:none;
 }
 .table{
