@@ -23,6 +23,7 @@ body{
 	background-image: url("plain_table.jpeg");
 }
 .slider{
+	display: none;
 	width: 100%;
 	height: 20vh;
 	outline:none;
@@ -37,7 +38,7 @@ body{
 #dice4{
 	display:none;
 	}
-#dice6{
+#diceX{
 	display:none;
 	}
 #dice8{
