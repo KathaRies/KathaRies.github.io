@@ -8,6 +8,7 @@ var interval = 75; //in milliseconds
 var randomNumber;
 var activeDice;
 var shakeThreshold = 20;
+var mobile = false;
 
 function selectCSS(){
 	console.log("selectCSS");
@@ -19,8 +20,7 @@ function selectCSS(){
 	if (WURFL.is_mobile === true) { //WURFL.is_mobile === true && WURFL.form_factor === "Smartphone"
 		fileref.setAttribute("href", "mobile_style.css");
 		diceX = document.getElementById("diceX");
-		diceX.onclick = function(){};
-		
+		mobile = true;
 	} else {
 		fileref.setAttribute("href", "style.css");
 		dice4 = document.getElementById("dice4");
@@ -34,10 +34,12 @@ function selectCSS(){
 }
 
 window.ondevicemotion = function(event){
-	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
-		activeDice = document.getElementById("slider").value;
-		chooseFreeDice();
-	}
+	if(mobile) {
+        if (Math.sqrt(event.acceleration.x * event.acceleration.x + event.acceleration.y * event.acceleration.y + event.acceleration.z * event.acceleration.z) > shakeThreshold) {
+            activeDice = document.getElementById("slider").value;
+            chooseFreeDice();
+        }
+    }
 }
 
 function onSliderUpdate(){
