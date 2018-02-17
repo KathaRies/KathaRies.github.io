@@ -34,7 +34,7 @@ function selectCSS(){
 }
 
 window.ondevicemotion = function(event){
-	if(mobile) {
+	if(!mobile) {
         if (Math.sqrt(event.acceleration.x * event.acceleration.x + event.acceleration.y * event.acceleration.y + event.acceleration.z * event.acceleration.z) > shakeThreshold) {
             activeDice = document.getElementById("slider").value;
             chooseFreeDice();
