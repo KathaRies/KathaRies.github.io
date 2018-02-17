@@ -21,13 +21,13 @@
 body{
 	background-image: url("plain_table.jpeg");
 }
-#slider{
+.slider{
 	width: 100%;
 	height: 20vh;
 	outline:none;
 	background: none;
 }
-#slider::-moz-range-thumb {
+.slider::-moz-range-thumb {
 	width: 25px;
 	height: 25px;
 	background: red;
