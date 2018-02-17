@@ -34,12 +34,11 @@ function selectCSS(){
 }
 
 window.ondevicemotion = function(event){
-	if(!mobile) {
-        if (Math.sqrt(event.acceleration.x * event.acceleration.x + event.acceleration.y * event.acceleration.y + event.acceleration.z * event.acceleration.z) > shakeThreshold) {
-            activeDice = document.getElementById("slider").value;
-            chooseFreeDice();
-        }
-    }
+
+	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
+		activeDice = document.getElementById("slider").value;
+		chooseFreeDice();
+	}
 }
 
 function onSliderUpdate(){
@@ -60,29 +59,33 @@ function onClickStart(id){
 		
 	
 	*/
-	
-	if(choosing){
-		stopThrowing();
-		document.getElementById("start").innerHTML = "Start";
-	} else{
-	switch(id){
-		case "start": 
-				choosing = true;
-				document.getElementById("start").innerHTML = "Stop";
-				randomNumber = setInterval(setAll,interval);
-		break;
-		case 'X': choosing = true;
-				activeDice = document.getElementById("slider").value; //X
-				randomNumber = setInterval(chooseFreeDice,interval);
-				
-		break;
-		default: choosing = true;
-				activeDice = id;
-				randomNumber = setInterval(chooseNew,interval);
-				
-		break;
-	}
-	}
+	if(!mobile) {
+
+        if (choosing) {
+            stopThrowing();
+            document.getElementById("start").innerHTML = "Start";
+        } else {
+            switch (id) {
+                case "start":
+                    choosing = true;
+                    document.getElementById("start").innerHTML = "Stop";
+                    randomNumber = setInterval(setAll, interval);
+                    break;
+                case 'X':
+                    choosing = true;
+                    activeDice = document.getElementById("slider").value; //X
+                    randomNumber = setInterval(chooseFreeDice, interval);
+
+                    break;
+                default:
+                    choosing = true;
+                    activeDice = id;
+                    randomNumber = setInterval(chooseNew, interval);
+
+                    break;
+            }
+        }
+    }
 }
 
 function setAll(){
