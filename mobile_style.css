@@ -1,5 +1,5 @@
 .dice{
-	margin:10vh 10vw;
+	margin:10vh 0px;
 	border-radius:10px;
 	background-color:red;
 	color:white;
@@ -19,7 +19,7 @@ body{
 	background-image: url("plain_table.jpeg");
 }
 #slider{
-width: 100%;
+	width: 100%;
 	outline:none;
 }
 
