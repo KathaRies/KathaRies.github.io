@@ -38,7 +38,6 @@ window.ondevicemotion = function(event){
 	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
 		//activeDice = document.getElementById("slider").value;
 		//chooseFreeDice(activeDice);
-		activeDice = 6;
 		chooseNew('6');
 
     }
@@ -106,7 +105,7 @@ function chooseFreeDice(){
 
 function chooseNew(max){
 	var i = max||activeDice;
-			number = Math.floor(Math.random() * 100)%i + 1;
+	number = Math.floor(Math.random() * 100)%i + 1;
     alert("max " + i+ "+ " +number );
     switch(i){
 				case '4': dice4.innerHTML = number;
