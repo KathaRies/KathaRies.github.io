@@ -40,7 +40,7 @@ window.ondevicemotion = function(event){
 		//chooseFreeDice(activeDice);
 		chooseNew('6');
 	}
-}
+};
 
 function onSliderUpdate(){
 	var value = document.getElementById("slider").value;
@@ -103,6 +103,7 @@ function chooseFreeDice(){
 }
 
 function chooseNew(max){
+	alert("choosen" + max);
 	var i = max||activeDice;
 	
 			number = Math.floor(Math.random() * 100)%i + 1;
