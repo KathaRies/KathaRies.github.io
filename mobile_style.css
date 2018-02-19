@@ -35,9 +35,9 @@ body{
 #start{
 	border: none;
 	background: none;
-	font-size:xx-large;
+	font-size:200%;
 	color:white;
-	margin: 0 25%;
+	margin: 20vh 25%;
 }
 
 #dice4{

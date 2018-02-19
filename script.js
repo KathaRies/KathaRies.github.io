@@ -106,9 +106,9 @@ function chooseFreeDice(){
 
 function chooseNew(max){
 	var i = max||activeDice;
-	alert("max " + max);
 			number = Math.floor(Math.random() * 100)%i + 1;
-			switch(i){
+    alert("max " + i+ "+ " +number );
+    switch(i){
 				case '4': dice4.innerHTML = number;
 						break;
 				case '6': dice6.innerHTML = number;
