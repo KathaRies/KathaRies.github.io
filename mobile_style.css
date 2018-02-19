@@ -1,6 +1,6 @@
 .dice{
 	margin:5vh 10vw;
-	border-radius:10px;
+	border-radius:10vw;
 	background-color:red;
 	color:white;
 	width: 45vw;
@@ -9,15 +9,7 @@
 	font-size: 5vh;
 	border:none;
 	opacity:0.7;
-}
-.table{
-
-	float:left;
-	width:75vw;
-	margin: 0vh 12vw;
-	padding-top: 5vh;
-	height: 100%;
-	text-align:center;
+	transition: none;
 }
 
 body{
@@ -38,6 +30,7 @@ body{
 	font-size:10vh;
 	color:white;
 	margin: 10vh 25%;
+	transition:none;
 }
 
 #dice4{
