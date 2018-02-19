@@ -17,9 +17,9 @@ function selectCSS(){
 	fileref.setAttribute("rel", "stylesheet");
 	fileref.setAttribute("type", "text/css");
 
-	if (WURFL.is_mobile === true) { //WURFL.is_mobile === true && WURFL.form_factor === "Smartphone"
+	if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") { //WURFL.is_mobile === true && WURFL.form_factor === "Smartphone"
 		fileref.setAttribute("href", "mobile_style.css");
-		diceX = document.getElementById("diceX");
+        dice6 = document.getElementById("dice6");
 		mobile = true;
 	} else {
 		fileref.setAttribute("href", "style.css");
