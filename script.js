@@ -38,8 +38,8 @@ window.ondevicemotion = function(event){
 	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
 		//activeDice = document.getElementById("slider").value;
 		//chooseFreeDice(activeDice);
+		activeDice = 6;
 		chooseNew('6');
-        chooseNew(6);
 
     }
 };
