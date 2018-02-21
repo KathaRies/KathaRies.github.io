@@ -5,11 +5,12 @@ var dice6;
 var dice8;
 var diceX;
 var interval = 75; //in milliseconds
-var randomNumber;
-var activeDice;
+var randomNumber; //the throwing interval object
+var activeDice; //number of dice X
 var shakeThreshold = 20;
 var mobile = false;
 
+//chooses with user agent sniffing the style sheet and initializes the html objects for the script
 function selectCSS(){
 	console.log("selectCSS");
 	
@@ -33,8 +34,8 @@ function selectCSS(){
 
 }
 
+//throwing with shaking
 window.ondevicemotion = function(event){
-
 	if(Math.sqrt(event.acceleration.x*event.acceleration.x + event.acceleration.y*event.acceleration.y + event.acceleration.z*event.acceleration.z)>shakeThreshold){
 		//activeDice = document.getElementById("slider").value;
 		//chooseFreeDice(activeDice);
@@ -43,11 +44,13 @@ window.ondevicemotion = function(event){
     }
 };
 
+//updates the X dice value
 function onSliderUpdate(){
 	var value = document.getElementById("slider").value;
 	diceX.innerHTML = value;
 }
 
+//stops the throwing
 function stopThrowing(){
 	choosing = false;
 	clearInterval(randomNumber);
@@ -55,6 +58,7 @@ function stopThrowing(){
 
 
 
+//starts and stops throwing dices. Onclick funtion for Start and dices
 function onClickStart(id){
 
 	//if(!mobile) {
@@ -88,6 +92,7 @@ function onClickStart(id){
    // }
 }
 
+//throws all dices
 function setAll(){
 	chooseNew('4');
 	chooseNew('6');
@@ -96,11 +101,13 @@ function setAll(){
 	chooseFreeDice();
 }
 
+//throws the X dice
 function chooseFreeDice(){
 	number = Math.floor(Math.random() * 100)%activeDice + 1;
 	diceX.innerHTML = number;
 }
 
+//throws a dice (4,6,8)
 function chooseNew(max){
 	var i = max||activeDice;
 	number = Math.floor(Math.random() * 100)%i + 1;

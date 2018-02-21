@@ -22,19 +22,19 @@
 	opacity: 0.7;
 }
 
-.slider::-moz-range-thumb {
+.slider::-moz-range-thumb { /*for firefox*/
 	width: 20px;
 	height: 25px;
 	background: red;
 	border:none;
 }
-.slider::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default look */
+.slider::-webkit-slider-thumb { /*for not firefox*/
+	-webkit-appearance: none;
 	appearance: none;
-	width: 25px; /* Set a specific slider handle width */
-	height: 25px; /* Slider handle height */
-	background: red; /* Green background */
-	cursor: pointer; /* Cursor on hover */
+	width: 25px;
+	height: 25px;
+	background: red;
+	cursor: pointer;
 	border:none;
 }
 
@@ -53,7 +53,7 @@
 }
 
 #diceX{
-	margin: 10vh auto;
+	margin: 10vh auto; /*to fit with slider*/
 }
 
 .table{
@@ -63,7 +63,6 @@
 }
 
 body{
-	background-color: #b4cce1;
 	background-color: #192019;
 
 }
