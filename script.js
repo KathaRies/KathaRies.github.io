@@ -17,7 +17,7 @@ function selectCSS(){
 	fileref.setAttribute("rel", "stylesheet");
 	fileref.setAttribute("type", "text/css");
 
-	if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") { //WURFL.is_mobile === true && WURFL.form_factor === "Smartphone"
+	if (WURFL.is_mobile === true) { //WURFL.is_mobile === true && WURFL.form_factor === "Smartphone"
 		fileref.setAttribute("href", "mobile_style.css");
         dice6 = document.getElementById("dice6");
 		mobile = true;
@@ -61,13 +61,15 @@ function onClickStart(id){
 
         if (choosing) {
             stopThrowing();
-            document.getElementById("start").innerHTML = "Start";
+            document.getElementById("start").innerHTML = "Throw a dice";
         } else {
             switch (id) {
                 case "start":
-                    choosing = true;
-                    document.getElementById("start").innerHTML = "Stop";
-                    randomNumber = setInterval(setAll, interval);
+                	if(!mobile) {
+                        choosing = true;
+                        document.getElementById("start").innerHTML = "Stop";
+                        randomNumber = setInterval(setAll, interval);
+                    }
                     break;
                 case 'X':
                     choosing = true;
