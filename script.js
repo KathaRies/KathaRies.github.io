@@ -56,12 +56,8 @@ function stopThrowing(){
 
 
 function onClickStart(id){
-	/*
-	if(!WURFL.is_mobile){
-		
-	
-	*/
-	if(!mobile) {
+
+	//if(!mobile) {
 
         if (choosing) {
             stopThrowing();
@@ -87,7 +83,7 @@ function onClickStart(id){
                     break;
             }
         }
-    }
+   // }
 }
 
 function setAll(){
