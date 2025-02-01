@@ -6,7 +6,6 @@ themesDir = "themes"
 # disable language
 disableLanguages = ["fr","de"] # disable language from here
 
-
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 [languages]
@@ -14,9 +13,9 @@ defaultContentLanguageInSubdir = true
     languageCode = 'en-US'
     languageName = 'English'
     title = 'Katha | Portfolio'
-    weight = 2
-
-
+    contentDir = "content/english"
+    weight = 1
+    home = "Home"
 
 ############################# Plugins ##############################
 
@@ -103,6 +102,8 @@ contact_form_action = "" # contact form works with https://formspree.io
 # Google analytics
 google_analytics_id = "" # your id
 
+copyright = "Copyright &copy; 2025 Katharina Riesterer"
+
 # Preloader
 [params.preloader]
 enable = true
@@ -120,14 +121,3 @@ link = "https://github.com/KathaRies"
 [[params.social]]
 icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
 link = "https://www.linkedin.com/in/katharina-riesterer-755841165/"
-
-
-################################### English language #####################################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
-home = "Home"
-# copyright
-copyright = "Copyright &copy; 2025 Katharina Riesterer"
