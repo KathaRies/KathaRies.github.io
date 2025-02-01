@@ -49,6 +49,16 @@ experience:
   title : "EXPERIENCE"
   experience_list:
     # experience item loop
+    - name : "Web Engineer"
+      company : "cannaflow"
+      duration : "2024-present"
+      content : "Club, inventory, shop and cannabis growing management"
+    # experience item loop
+    - name : "Web Engineer"
+      company : "codesphere.com"
+      duration : "2022-2024"
+      content : "Deploying pools of pods in kubernetes and testing an interactive website."
+    # experience item loop
     - name : "Bee Tracker"
       company : "Apic.ai"
       duration : "2020-2021"
@@ -75,6 +85,14 @@ skill:
   showpercent : true
   skill_list:
     # skill item loop
+    - name : "Typescript"
+      percentage : "80%"
+
+     # skill item loop
+    - name : "Kubernetes"
+      percentage : "40%"
+
+    # skill item loop
     - name : "Python"
       percentage : "50%"
       
@@ -89,11 +107,6 @@ skill:
     # skill item loop
     - name : "AR - VR"
       percentage : "20%"
-      
-    # skill item loop
-    - name : "Startups Karlsruhe"
-      percentage : "40%"
-
 
 ################################### Service ##############################3
 service:
@@ -103,26 +116,6 @@ service:
 #     # service item loop
 #     - name : "Web Development"
 #       image : "images/icons/web-development.png"
-      
-#     # service item loop
-#     - name : "Graphic Design"
-#       image : "images/icons/graphic-design.png"
-      
-#     # service item loop
-#     - name : "Database Management"
-#       image : "images/icons/dbms.png"
-      
-#     # service item loop
-#     - name : "Software Development"
-#       image : "images/icons/software-development.png"
-      
-    # # service item loop
-    # - name : "Digital Marketing"
-    #   image : "images/icons/marketing.png"
-      
-    # # service item loop
-    # - name : "Mobile App Development"
-    #   image : "images/icons/mobile-app.png"
 
 
 ############################## call to action #########################
@@ -179,45 +172,30 @@ testimonial:
 #       designation : "CEO, RANDOM COMPANY"
 #       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
 #                 omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-                
-#     # slider item loop
-#     - name : "Peter Parker"
-#       image : "images/clients/client2.jpg"
-#       designation : "CEO, RANDOM COMPANY"
-#       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-#                 omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-                
-#     # slider item loop
-#     - name : "Jessica Jones"
-#       image : "images/clients/client3.jpg"
-#       designation : "CEO, RANDOM COMPANY"
-#       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-#                 omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-
 
 ######################### funfacts #############################3
 funfacts:
   enable : true
   funfacts_list:
     # funfacts item loop
-    - name : "HANDS TO WORK"
+    - name : "COMMITS A DAY"
       image : "images/icons/works.png"
-      count : "100"
+      count : 17
       
     # funfacts item loop
-    - name : "STARTED CLIENT"
+    - name : "PHOTOS TAKEN"
       image : "images/icons/happy.png"
-      count : "200"
+      count : 22923
       
     # funfacts item loop
-    - name : "FINISHED PROJECT"
+    - name : "COUNTRIES VISITED"
       image : "images/icons/project.png"
-      count : "250"
+      count : 29
       
     # funfacts item loop
     - name : "CUPS OF TEA"
       image : "images/icons/coffee.png"
-      count : "150"
+      count : 150
 
 
 ############################## contact ###########################
