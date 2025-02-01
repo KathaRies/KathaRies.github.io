@@ -6,6 +6,18 @@ themesDir = "themes"
 # disable language
 disableLanguages = ["fr","de"] # disable language from here
 
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    title = 'Katha | Portfolio'
+    weight = 2
+
+
+
 ############################# Plugins ##############################
 
 # CSS Plugins
