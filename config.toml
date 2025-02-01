@@ -2,6 +2,7 @@
 baseURL = "https://KathaRies.github.io"
 title = "Katha | Portfolio"
 theme = "somrat"
+themesDir = "themes"
 # disable language
 disableLanguages = ["fr","de"] # disable language from here
 
@@ -96,14 +97,6 @@ enable = true
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
   
 ############################# social site ########################
-#[[params.social]]
-#icon = "fa-facebook-f" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-#link = "https://www.facebook.com/katha.ri.96"
-
-#[[params.social]]
-#icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-#link = "https://twitter.com/somrat_37"
-
 [[params.social]]
 icon = "fa-instagram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
 link = "https://www.instagram.com/katha.creates/"
@@ -126,14 +119,3 @@ weight = 1
 home = "Home"
 # copyright
 copyright = "Copyright &copy; 2025 Katharina Riesterer"
-
-
-################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
-home = "Accueil"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
